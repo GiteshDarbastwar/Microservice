@@ -20,7 +20,7 @@ public class EmployeeService {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String DEPARTMENT_SERVICE_URL = "http://localhost:8082/departments/";
+    private static final String DEPARTMENT_SERVICE_URL = "http://DEPARTMENT-SERVICE/departments/";
 
     public List<Employee> getAllEmployees() throws DataNotFoundException {
         List<Employee> allEmp = employeeRepository.findAll();
